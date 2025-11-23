@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 
 const problems = [
-  "'Diquinhas' de marketing que não geram resultado real",
-  "Trabalhar 12h/dia e ver o lucro mínimo",
-  "Estratégias ultrapassadas que todos ensinam",
-  "Sensação de estar sempre correndo atrás do prejuízo",
+  "Trabalho 12, 14 horas por dia e no final do mês não sobra quase nada",
+  "Mando currículos todos os dias e não consigo emprego",
+  "Troco 8h do meu dia por um salário que não cobre minhas contas",
+  "Preciso de uma renda extra urgente",
+  "Meu chefe não valoriza meu trabalho e vivo com medo de ser demitido",
+  "Quero entrar no digital mas não sei programar",
 ];
 
 export const ProblemSection = () => {
