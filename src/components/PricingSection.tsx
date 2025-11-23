@@ -37,7 +37,7 @@ export const PricingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-gold shadow-gold-strong relative h-full flex flex-col">
+            <div className="bg-card rounded-2xl p-8 md:p-10 border-2 border-gold/50 shadow-gold relative h-full flex flex-col">
             {/* Popular badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <div className="bg-gradient-gold px-6 py-2 rounded-full flex items-center gap-2">
@@ -108,21 +108,36 @@ export const PricingSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            whileHover={{ scale: 1.02 }}
+            className="md:transform md:scale-105"
           >
-            <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-accent shadow-gold-strong relative h-full flex flex-col">
+            <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-2xl p-8 md:p-10 border-4 border-accent shadow-accent-strong relative h-full flex flex-col overflow-hidden">
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5 animate-pulse"></div>
+              <div className="relative z-10">
               {/* Premium badge */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-accent px-6 py-2 rounded-full flex items-center gap-2">
-                  <Zap className="w-4 h-4 text-navy" />
-                  <span className="text-navy font-bold">PREMIUM</span>
-                </div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                <motion.div 
+                  className="bg-gradient-to-r from-accent via-accent-light to-accent px-8 py-3 rounded-full flex items-center gap-2 shadow-accent-strong"
+                  animate={{ 
+                    boxShadow: [
+                      "0 0 20px rgba(0, 255, 255, 0.5)",
+                      "0 0 40px rgba(0, 255, 255, 0.8)",
+                      "0 0 20px rgba(0, 255, 255, 0.5)"
+                    ]
+                  }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  <Zap className="w-5 h-5 text-navy" />
+                  <span className="text-navy font-black text-lg">PREMIUM VIP</span>
+                </motion.div>
               </div>
 
               <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Método IA Profit Master
                   <br />
-                  <span className="text-accent">+ MENTORIA EXCLUSIVA</span>
+                  <span className="text-accent drop-shadow-[0_0_10px_rgba(0,255,255,0.5)]">+ MENTORIA EXCLUSIVA</span>
                 </h3>
 
                 <div className="mb-2">
@@ -132,7 +147,7 @@ export const PricingSection = () => {
                 </div>
 
                 <div className="mb-4">
-                  <span className="text-5xl md:text-6xl font-black text-accent">
+                  <span className="text-5xl md:text-6xl font-black text-accent drop-shadow-[0_0_15px_rgba(0,255,255,0.6)]">
                     R$ 997
                   </span>
                 </div>
@@ -155,7 +170,7 @@ export const PricingSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1, duration: 0.5 }}
-                  className="flex items-start gap-3 bg-accent/10 p-4 rounded-xl border border-accent/30"
+                  className="flex items-start gap-3 bg-gradient-to-r from-accent/20 via-accent/10 to-transparent p-4 rounded-xl border-2 border-accent/50 shadow-accent"
                 >
                   <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-accent" />
@@ -206,17 +221,23 @@ export const PricingSection = () => {
                 </motion.div>
               </div>
 
-              <Button
-                size="lg"
-                variant="cta"
-                className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-accent hover:bg-accent/90 text-navy"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
               >
-                QUERO MENTORIA EXCLUSIVA!
-              </Button>
+                <Button
+                  size="lg"
+                  variant="cta"
+                  className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-gradient-to-r from-accent via-accent-light to-accent hover:from-accent-dark hover:to-accent text-navy font-black shadow-accent-strong"
+                >
+                  QUERO MENTORIA EXCLUSIVA!
+                </Button>
+              </motion.div>
 
               <p className="text-center text-sm text-muted-foreground mt-6">
                 🔒 Pagamento 100% seguro e protegido
               </p>
+              </div>
             </div>
           </motion.div>
         </div>

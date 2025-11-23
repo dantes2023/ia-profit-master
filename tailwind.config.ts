@@ -38,6 +38,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          light: "hsl(var(--accent-light))",
+          dark: "hsl(var(--accent-dark))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -67,6 +69,8 @@ export default {
         'gold': 'var(--shadow-gold)',
         'gold-strong': 'var(--shadow-gold-strong)',
         'card': 'var(--shadow-card)',
+        'accent': '0 10px 50px -5px rgba(0, 255, 255, 0.6)',
+        'accent-strong': '0 20px 80px -10px rgba(0, 255, 255, 0.9)',
       },
       borderRadius: {
         lg: "var(--radius)",

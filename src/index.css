@@ -46,6 +46,9 @@ All colors MUST be HSL.
     --gold: 51 100% 50%;
     --gold-light: 51 100% 60%;
     --gold-dark: 45 100% 40%;
+    --accent: 180 100% 50%;
+    --accent-light: 180 100% 60%;
+    --accent-dark: 180 80% 40%;
     --navy: 210 100% 12%;
     --navy-light: 210 60% 25%;
     --navy-darker: 210 100% 8%;
