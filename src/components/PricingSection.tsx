@@ -121,9 +121,9 @@ export const PricingSection = () => {
                   className="bg-gradient-to-r from-accent via-accent-light to-accent px-8 py-3 rounded-full flex items-center gap-2 shadow-accent-strong"
                   animate={{ 
                     boxShadow: [
-                      "0 0 20px rgba(0, 255, 255, 0.5)",
-                      "0 0 40px rgba(0, 255, 255, 0.8)",
-                      "0 0 20px rgba(0, 255, 255, 0.5)"
+                      "0 0 20px rgba(66, 153, 255, 0.5)",
+                      "0 0 40px rgba(66, 153, 255, 0.8)",
+                      "0 0 20px rgba(66, 153, 255, 0.5)"
                     ]
                   }}
                   transition={{ duration: 2, repeat: Infinity }}
@@ -138,7 +138,7 @@ export const PricingSection = () => {
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Método IA Profit Master
                   <br />
-                  <span className="text-accent drop-shadow-[0_0_10px_rgba(0,255,255,0.5)]">+ MENTORIA EXCLUSIVA</span>
+                  <span className="text-accent drop-shadow-[0_0_10px_rgba(66,153,255,0.5)]">+ MENTORIA EXCLUSIVA</span>
                 </h3>
 
                 <div className="mb-2">
@@ -148,7 +148,7 @@ export const PricingSection = () => {
                 </div>
 
                 <div className="mb-4">
-                  <span className="text-5xl md:text-6xl font-black text-accent drop-shadow-[0_0_15px_rgba(0,255,255,0.6)]">
+                  <span className="text-5xl md:text-6xl font-black text-accent drop-shadow-[0_0_15px_rgba(66,153,255,0.6)]">
                     R$ 997
                   </span>
                 </div>
