@@ -116,7 +116,7 @@ export const PricingSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5 animate-pulse"></div>
               
               {/* Premium badge */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-30">
                 <motion.div 
                   className="bg-gradient-to-r from-accent via-accent-light to-accent px-8 py-3 rounded-full flex items-center gap-2 shadow-accent-strong"
                   animate={{ 
