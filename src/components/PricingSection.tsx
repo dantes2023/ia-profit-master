@@ -114,7 +114,7 @@ export const PricingSection = () => {
             <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-2xl p-8 md:p-10 border-4 border-accent shadow-accent-strong relative h-full flex flex-col overflow-hidden">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5 animate-pulse"></div>
-              <div className="relative z-10">
+              
               {/* Premium badge */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
                 <motion.div 
@@ -133,6 +133,7 @@ export const PricingSection = () => {
                 </motion.div>
               </div>
 
+              <div className="relative z-10">
               <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Método IA Profit Master
