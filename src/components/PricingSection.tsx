@@ -1,29 +1,23 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Check, Zap } from "lucide-react";
-
-const includes = [
-  "Acesso Vitalício ao Curso",
-  "Bônus: Biblioteca de Scripts (R$ 997)",
-  "Bônus: Configuração em Grupo AO VIVO (R$ 697)",
-  "Bônus: Comunidade VIP (R$ 497)",
-  "Suporte Direto no Telegram",
-  "Atualizações Gratuitas",
-];
-
+const includes = ["Acesso Vitalício ao Curso", "Bônus: Biblioteca de Scripts (R$ 997)", "Bônus: Configuração em Grupo AO VIVO (R$ 697)", "Bônus: Comunidade VIP (R$ 497)", "Suporte Direto no Telegram", "Atualizações Gratuitas"];
 export const PricingSection = () => {
-  return (
-    <section className="py-20 bg-navy-darker relative overflow-hidden">
+  return <section className="py-20 bg-navy-darker relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-glow opacity-50"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8
+      }} className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Escolha Seu Plano de <span className="text-gold">Acesso</span>
           </h2>
@@ -31,12 +25,17 @@ export const PricingSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Plano Completo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          scale: 0.95
+        }} whileInView={{
+          opacity: 1,
+          scale: 1
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.8
+        }}>
             <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-gold shadow-gold-strong relative h-full flex flex-col">
             {/* Popular badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -71,28 +70,26 @@ export const PricingSection = () => {
             </div>
 
             <div className="space-y-4 mb-8">
-              {includes.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="flex items-start gap-3"
-                >
+              {includes.map((item, index) => <motion.div key={index} initial={{
+                opacity: 0,
+                x: -20
+              }} whileInView={{
+                opacity: 1,
+                x: 0
+              }} viewport={{
+                once: true
+              }} transition={{
+                delay: index * 0.1,
+                duration: 0.5
+              }} className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-gold/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-gold" />
                   </div>
                   <span className="text-foreground/90">{item}</span>
-                </motion.div>
-              ))}
+                </motion.div>)}
             </div>
 
-            <Button
-              size="lg"
-              variant="cta"
-              className="w-full text-xl py-8 h-auto rounded-xl mt-auto"
-            >
+            <Button size="lg" variant="cta" className="w-full text-xl py-8 h-auto rounded-xl mt-auto">
               QUERO MEU ACESSO AGORA!
             </Button>
 
@@ -103,13 +100,19 @@ export const PricingSection = () => {
           </motion.div>
 
           {/* Plano Premium com Mentoria */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-neon shadow-neon-strong relative h-full flex flex-col">
+          <motion.div initial={{
+          opacity: 0,
+          scale: 0.95
+        }} whileInView={{
+          opacity: 1,
+          scale: 1
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.8,
+          delay: 0.2
+        }}>
+            <div className="bg-card p-8 md:p-10 border-4 border-neon shadow-neon-strong relative h-full flex flex-col rounded-2xl">
               {/* Premium badge */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <div className="bg-gradient-neon px-6 py-2 rounded-full flex items-center gap-2">
@@ -150,13 +153,18 @@ export const PricingSection = () => {
                   <span className="text-foreground/90 font-semibold">TUDO do Plano Completo +</span>
                 </div>
                 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1, duration: 0.5 }}
-                  className="flex items-start gap-3 bg-neon/10 p-4 rounded-xl border border-neon/30"
-                >
+                <motion.div initial={{
+                opacity: 0,
+                x: -20
+              }} whileInView={{
+                opacity: 1,
+                x: 0
+              }} viewport={{
+                once: true
+              }} transition={{
+                delay: 0.1,
+                duration: 0.5
+              }} className="flex items-start gap-3 bg-neon/10 p-4 rounded-xl border border-neon/30">
                   <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-neon" />
                   </div>
@@ -166,39 +174,54 @@ export const PricingSection = () => {
                   </div>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
-                  className="flex items-start gap-3"
-                >
+                <motion.div initial={{
+                opacity: 0,
+                x: -20
+              }} whileInView={{
+                opacity: 1,
+                x: 0
+              }} viewport={{
+                once: true
+              }} transition={{
+                delay: 0.2,
+                duration: 0.5
+              }} className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90">Suporte Prioritário VIP</span>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                  className="flex items-start gap-3"
-                >
+                <motion.div initial={{
+                opacity: 0,
+                x: -20
+              }} whileInView={{
+                opacity: 1,
+                x: 0
+              }} viewport={{
+                once: true
+              }} transition={{
+                delay: 0.3,
+                duration: 0.5
+              }} className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90">Análise Personalizada do Seu Negócio</span>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="flex items-start gap-3"
-                >
+                <motion.div initial={{
+                opacity: 0,
+                x: -20
+              }} whileInView={{
+                opacity: 1,
+                x: 0
+              }} viewport={{
+                once: true
+              }} transition={{
+                delay: 0.4,
+                duration: 0.5
+              }} className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-neon" />
                   </div>
@@ -206,11 +229,7 @@ export const PricingSection = () => {
                 </motion.div>
               </div>
 
-              <Button
-                size="lg"
-                variant="cta"
-                className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-gradient-neon hover:opacity-90 text-navy shadow-neon"
-              >
+              <Button size="lg" variant="cta" className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-gradient-neon hover:opacity-90 text-navy shadow-neon">
                 QUERO MENTORIA EXCLUSIVA!
               </Button>
 
@@ -221,6 +240,5 @@ export const PricingSection = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
