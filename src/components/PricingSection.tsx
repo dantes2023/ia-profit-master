@@ -109,10 +109,10 @@ export const PricingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-accent shadow-gold-strong relative h-full flex flex-col">
+            <div className="bg-card rounded-2xl p-8 md:p-10 border-4 border-neon shadow-neon-strong relative h-full flex flex-col">
               {/* Premium badge */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-accent px-6 py-2 rounded-full flex items-center gap-2">
+                <div className="bg-gradient-neon px-6 py-2 rounded-full flex items-center gap-2">
                   <Zap className="w-4 h-4 text-navy" />
                   <span className="text-navy font-bold">PREMIUM</span>
                 </div>
@@ -122,7 +122,7 @@ export const PricingSection = () => {
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Método IA Profit Master
                   <br />
-                  <span className="text-accent">+ MENTORIA EXCLUSIVA</span>
+                  <span className="text-neon">+ MENTORIA EXCLUSIVA</span>
                 </h3>
 
                 <div className="mb-2">
@@ -132,20 +132,20 @@ export const PricingSection = () => {
                 </div>
 
                 <div className="mb-4">
-                  <span className="text-5xl md:text-6xl font-black text-accent">
+                  <span className="text-5xl md:text-6xl font-black text-neon">
                     R$ 997
                   </span>
                 </div>
 
                 <p className="text-foreground/70">
-                  ou <span className="text-accent font-bold">12x de R$ 99,70</span>
+                  ou <span className="text-neon font-bold">12x de R$ 99,70</span>
                 </p>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" />
+                  <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90 font-semibold">TUDO do Plano Completo +</span>
                 </div>
@@ -155,10 +155,10 @@ export const PricingSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1, duration: 0.5 }}
-                  className="flex items-start gap-3 bg-accent/10 p-4 rounded-xl border border-accent/30"
+                  className="flex items-start gap-3 bg-neon/10 p-4 rounded-xl border border-neon/30"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" />
+                  <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-neon" />
                   </div>
                   <div>
                     <span className="text-foreground font-bold block">Acompanhamento Exclusivo</span>
@@ -173,8 +173,8 @@ export const PricingSection = () => {
                   transition={{ delay: 0.2, duration: 0.5 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" />
+                  <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90">Suporte Prioritário VIP</span>
                 </motion.div>
@@ -186,8 +186,8 @@ export const PricingSection = () => {
                   transition={{ delay: 0.3, duration: 0.5 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" />
+                  <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90">Análise Personalizada do Seu Negócio</span>
                 </motion.div>
@@ -199,8 +199,8 @@ export const PricingSection = () => {
                   transition={{ delay: 0.4, duration: 0.5 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" />
+                  <div className="flex-shrink-0 w-6 h-6 bg-neon/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-neon" />
                   </div>
                   <span className="text-foreground/90">Estratégias Customizadas para Você</span>
                 </motion.div>
@@ -209,7 +209,7 @@ export const PricingSection = () => {
               <Button
                 size="lg"
                 variant="cta"
-                className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-accent hover:bg-accent/90 text-navy"
+                className="w-full text-xl py-8 h-auto rounded-xl mt-auto bg-gradient-neon hover:opacity-90 text-navy shadow-neon"
               >
                 QUERO MENTORIA EXCLUSIVA!
               </Button>
