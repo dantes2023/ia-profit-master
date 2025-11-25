@@ -57,16 +57,24 @@ export default {
           light: "hsl(var(--navy-light))",
           darker: "hsl(var(--navy-darker))",
         },
+        neon: {
+          DEFAULT: "hsl(var(--neon))",
+          light: "hsl(var(--neon-light))",
+          dark: "hsl(var(--neon-dark))",
+        },
       },
       backgroundImage: {
         'gradient-gold': 'var(--gradient-gold)',
         'gradient-navy': 'var(--gradient-navy)',
         'gradient-glow': 'var(--gradient-glow)',
+        'gradient-neon': 'var(--gradient-neon)',
       },
       boxShadow: {
         'gold': 'var(--shadow-gold)',
         'gold-strong': 'var(--shadow-gold-strong)',
         'card': 'var(--shadow-card)',
+        'neon': 'var(--shadow-neon)',
+        'neon-strong': 'var(--shadow-neon-strong)',
       },
       borderRadius: {
         lg: "var(--radius)",
